@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gymnia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand:700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+  
+    <header>
+      <h1>Gymnia</h1>
+      <nav>
+        <ul>
+          <li><a href="novoAluno.html">Novo Aluno</a></li>
+          <li><a href="pesquisaDeAluno.html">Pesquisar</a></li>
+          <li><a href="controleDeAcesso.html">Controle de Acesso</a></li>
+          <li><a href="relatoriosDeEntradaSaida.html">Entradas e Saídas</a></li>
+          <li><a href="relatorioDeSituacoes.html">Situações</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Novo Aluno</h2>
+      <div id="infoMessage">
+        (Mensagem de LOG)
+      </div>
+    </section>
+
+    <br>
+
+    <form>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+          <label for="nome">Nome completo</label><br>
+          <input type="text" name="nome" id="nome"><br>
+          <br>
+          <label for="sexo">Sexo</label><br>
+          <select name="sexo" id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+          </select><br>
+          <br>
+          <label for="rg">RG</label><br>
+          <input type="text" name="rg" id="rg" placeholder="Somente números"><br>
+          <br>
+          <label for="data_nascimento">Data de Nascimento</label><br>
+          <input type="date" name="data_nascimento" id="data_nascimento"><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Situação</legend>
+
+        <label for="situacao">Situação Cadastral</label><br>
+        <select name="situacao" id="situacao">
+          <option value="ativo">Ativo</option>
+          <option value="inativo">Inativo</option>
+          <option value="pendencia">Com Pendencia</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        
+        <label for="rua">Rua</label><br>
+          <input type="text" name="rua" id="rua"><br>
+        <br>
+        <label for="numero">Número</label><br>
+          <input type="text" name="numero" id="numero"><br>
+        <br>
+        <label for="bairro">Bairro</label><br>
+          <input type="text" name="bairro" id="bairro"><br>
+        <br>
+        <label for="complemento">Complemento</label><br>
+          <input type="text" name="complemento" id="complemento"><br>
+        <br>
+        <label for="cidade">Cidade</label><br>
+          <input type="text" name="cidade" id="cidade"><br>
+        <br>
+        <label for="estado">UF</label><br>
+        <select name="estado" id="estado">
+          <option value="">Selecione o Estado</option>
+        </select><br>
+        <br>
+        <label for="cep">CEP</label><br>
+          <input type="text" name="cep" id="cep"><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contato</legend>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email"><br>
+        <br>
+        <label for="celDDD">Telefone Celular</label><br>
+          <input type="tel" name="celDDD" id="celDDD" placeholder="xx">
+          <input type="tel" name="numCel" id="numCel" placeholder="xxxxx-xxxx"><br>
+        <br>
+        <label for="telDDD">Telefone Fixo</label><br>
+          <input type="tel" name="telDDD" id="telDDD" placeholder="xx">
+          <input type="tel" name="numTel" id="numTel" placeholder="xxxxx-xxxx"><br>
+      </fieldset>
+
+      <input type="submit" value="Salvar">
+      <input type="button" value="Relatório de Acessos">
+    </form>
+
+    <footer>
+      2020 - Desenvolvido por Júlio Brazão
+    </footer>
+  </div>
+</body>
+</html>

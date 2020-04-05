@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gymnia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand:700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+  
+    <header>
+      <h1>Gymnia</h1>
+      <nav>
+        <ul>
+          <li><a href="novoAluno.html">Novo Aluno</a></li>
+          <li><a href="pesquisaDeAluno.html">Pesquisar</a></li>
+          <li><a href="controleDeAcesso.html">Controle de Acesso</a></li>
+          <li><a href="relatoriosDeEntradaSaida.html">Entradas e Saídas</a></li>
+          <li><a href="relatorioDeSituacoes.html">Situações</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Relatório de Entradas e Saídas</h2>
+      <div id="infoMessage">
+        (Mensagem de LOG)
+      </div>
+    </section>
+
+    <form>
+      <fieldset>
+        <legend>Parâmetros de Acesso</legend>
+
+        <label for="idAluno">ID</label><br>
+          <input type="text" name="idAluno" id="idAluno"><br>
+          <br>
+        <label for="dataInicial">Data Inicial</label><br>
+          <input type="date" name="dataInicial" id="dataInicial"><br>
+          <br>
+        <label for="dataFinal">Data Final</label><br>
+          <input type="date" name="dataFinal" id="dataFinal"><br>
+          <br>
+      </fieldset>
+
+      <input type="submit" value="Gerar">
+    </form>
+
+    <hr>
+
+    <h4>Dados Gerados</h4>
+
+    <table>
+      <thead>
+        <td>ID</td>
+        <td>Nome</td>
+        <td>Entrada</td>
+        <td>Saída</td>
+        <td>Duração</td>
+      </thead>
+
+      <tr>
+        <td>1</td>
+        <td>Júlio</td>
+        <td>03/07/2020 19:00:01</td>
+        <td>03/07/2020 20:00:01</td>
+        <td>01:00</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Júlia</td>
+        <td>03/07/2020 19:00:01</td>
+        <td>03/07/2020 20:00:01</td>
+        <td>01:00</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Mariê</td>
+        <td>03/07/2020 19:00:01</td>
+        <td>03/07/2020 20:00:01</td>
+        <td>01:00</td>
+      </tr>
+    </table>
+
+    <footer>
+      2020 - Desenvolvido por Júlio Brazão
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gymnia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand:700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+  
+    <header>
+      <h1>Gymnia</h1>
+      <nav>
+        <ul>
+          <li><a href="novoAluno.html">Novo Aluno</a></li>
+          <li><a href="pesquisaDeAluno.html">Pesquisar</a></li>
+          <li><a href="controleDeAcesso.html">Controle de Acesso</a></li>
+          <li><a href="relatoriosDeEntradaSaida.html">Entradas e Saídas</a></li>
+          <li><a href="relatorioDeSituacoes.html">Situações</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Pesquisa de Aluno</h2>
+      <div id="infoMessage">
+        (Mensagem de LOG)
+      </div>
+    </section>
+
+    <form>
+      <fieldset>
+        <legend>Parâmetros da Pesquisa</legend>
+
+        <label for="idAluno">ID</label><br>
+          <input type="text" name="idAluno" id="idAluno"><br>
+          <br>
+        <label for="nome">Nome</label><br>
+          <input type="text" name="nome" id="nome"><br>
+          <br>
+        <label for="rg">RG</label><br>
+          <input type="text" name="rg" id="rg" placeholder="Somente números"><br>
+          <br>
+        <label for="telDDD">Telefone Fixo</label><br>
+          <input type="tel" name="telDDD" id="telDDD" placeholder="xx">
+          <input type="tel" name="numTel" id="numTel" placeholder="xxxxx-xxxx"><br>
+      </fieldset>
+
+      <input type="submit" value="Pesquisar">
+    </form>
+
+    <hr>
+
+    <h4>Resultados de Pesquisa</h4>
+    <table>
+      <thead>
+        <td>ID</td>
+        <td>Nome</td>
+        <td>RG</td>
+        <td>Email</td>
+        <td>Situação</td>
+        <td>Ações</td>
+      </thead>
+      <tr>
+        <td>1</td>
+        <td>Júlio Brazão</td>
+        <td>25684485</td>
+        <td>jotabrazao@gmail.com</td>
+        <td>Ativo</td>
+        <td>
+          <input type="button" value="Editar">
+          <input type="button" value="Excluir">
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Júlia Fonseca</td>
+        <td>25684342</td>
+        <td>jfonseca@gmail.com</td>
+        <td>Ativo</td>
+        <td>
+          <input type="button" value="Editar">
+          <input type="button" value="Excluir">
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Mariê Fonseca</td>
+        <td>25682222</td>
+        <td>mfonseca@gmail.com</td>
+        <td>Inativo</td>
+        <td>
+          <input type="button" value="Editar">
+          <input type="button" value="Excluir">
+        </td>
+      </tr>
+    </table>
+
+
+
+    <footer>
+      2020 - Desenvolvido por Júlio Brazão
+    </footer>
+</div>
+</body>
+</html>
+ 

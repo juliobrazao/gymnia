@@ -1,0 +1,143 @@
+// out: style.css
+@dblue: #495867;
+@blue: #577399;
+@lblue: #BDD5EA;
+@lpurple: #88498F;
+@dpurple: #37123C;
+
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+body {
+  background: @dblue;
+  font-family: sans-serif;
+  text-align: center;
+}
+section {
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  color: @lblue;
+}
+#content {
+  width: 80%;
+  text-align: left;
+    header {
+      text-align: center;
+      padding: 10px 0;
+        h1 {
+          font-family: "Quicksand";
+          font-size: 50px;
+          color: @lblue;
+          padding-bottom: 20px;
+        }
+        @media only screen and (min-width: 661px) {
+        nav {
+          border-bottom: 1px solid @lblue;
+          padding: 10px 0;
+          font-size: 13px;
+          font-family: "Muli";
+          li {
+            list-style: none;
+            display: inline;
+          }
+            a, a:visited {
+              padding: 10px 10px;
+              color: @lblue;
+              text-decoration: none;
+            }
+            a:hover {
+              background: @lpurple;
+            }
+        } } // close media querie
+        @media only screen and (max-width: 660px) {
+          nav {
+            border-bottom: 1px solid @lblue;
+            padding: 10px 0;
+            font-size: 13px;
+            font-family: "Muli";
+            li {
+              list-style: none;
+              padding: 5px 0;
+            }
+              a, a:visited {
+                padding: 10px 10px;
+                color: @lblue;
+                text-decoration: none;
+              }
+              a:hover {
+                background: @lpurple;
+              }
+        } } // close media querie
+    }
+    form {
+      font-family: "Muli";
+        fieldset {
+          padding: 10px;
+          margin-top: 20px;
+          border: 1px solid @blue;
+            legend {
+              margin-left: 3%;
+              padding: 0 10px;
+              font-weight: bold;
+              color: @lblue;
+            }
+        }
+        label {
+          color: @lblue;
+        }
+        input {
+          font-family: "Muli";
+        }
+        input[type=text], input[type=tel], input[type=email], input[type=date], select {
+          padding: 4px;
+          background: @lpurple;
+          border: 1px solid @dpurple;
+          color: yellow;
+        }
+        input[type=tel]:nth-child(odd){
+          width: 30px;
+        }
+        input[type=submit], input[type=button] {
+          border: 1px solid @dpurple;
+          background: linear-gradient(@lpurple, @dpurple);
+          color: @lblue;
+          font-family: "Muli";
+          margin: 15px 0;
+          padding: 8px;
+        }
+        input[type=submit]:hover, input[type=button]:hover {
+          background: @lpurple;
+        }
+    }
+    h4 {
+      padding: 20px 0;
+    }
+    table {
+      padding: 10px 0;
+        td {
+          padding: 5px;
+            input[type=button] {
+              padding: 4px;
+            }
+        }
+        tr:nth-child(even){
+          background: #ccc;
+        }
+        tr:nth-child(odd){
+          background: #eee;
+        }
+        thead {
+          font-weight: bold;
+            td {
+              background: rgb(68, 68, 68);
+              color: #fff;
+            }
+        }
+    }
+    footer {
+      text-align: center;
+      padding: 25px 0;
+    }
+}

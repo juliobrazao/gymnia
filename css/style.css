@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+body {
+  background: #495867;
+  font-family: sans-serif;
+  text-align: center;
+}
+section {
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  color: #BDD5EA;
+}
+#content {
+  width: 80%;
+  text-align: left;
+}
+#content header {
+  text-align: center;
+  padding: 10px 0;
+}
+#content header h1 {
+  font-family: "Quicksand";
+  font-size: 50px;
+  color: #BDD5EA;
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 661px) {
+  #content header nav {
+    border-bottom: 1px solid #BDD5EA;
+    padding: 10px 0;
+    font-size: 13px;
+    font-family: "Muli";
+  }
+  #content header nav li {
+    list-style: none;
+    display: inline;
+  }
+  #content header nav a,
+  #content header nav a:visited {
+    padding: 10px 10px;
+    color: #BDD5EA;
+    text-decoration: none;
+  }
+  #content header nav a:hover {
+    background: #88498F;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #content header nav {
+    border-bottom: 1px solid #BDD5EA;
+    padding: 10px 0;
+    font-size: 13px;
+    font-family: "Muli";
+  }
+  #content header nav li {
+    list-style: none;
+    padding: 5px 0;
+  }
+  #content header nav a,
+  #content header nav a:visited {
+    padding: 10px 10px;
+    color: #BDD5EA;
+    text-decoration: none;
+  }
+  #content header nav a:hover {
+    background: #88498F;
+  }
+}
+#content form {
+  font-family: "Muli";
+}
+#content form fieldset {
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #577399;
+}
+#content form fieldset legend {
+  margin-left: 3%;
+  padding: 0 10px;
+  font-weight: bold;
+  color: #BDD5EA;
+}
+#content form label {
+  color: #BDD5EA;
+}
+#content form input {
+  font-family: "Muli";
+}
+#content form input[type=text],
+#content form input[type=tel],
+#content form input[type=email],
+#content form input[type=date],
+#content form select {
+  padding: 4px;
+  background: #88498F;
+  border: 1px solid #37123C;
+  color: yellow;
+}
+#content form input[type=tel]:nth-child(odd) {
+  width: 30px;
+}
+#content form input[type=submit],
+#content form input[type=button] {
+  border: 1px solid #37123C;
+  background: linear-gradient(#88498F, #37123C);
+  color: #BDD5EA;
+  font-family: "Muli";
+  margin: 15px 0;
+  padding: 8px;
+}
+#content form input[type=submit]:hover,
+#content form input[type=button]:hover {
+  background: #88498F;
+}
+#content h4 {
+  padding: 20px 0;
+}
+#content table {
+  padding: 10px 0;
+}
+#content table td {
+  padding: 5px;
+}
+#content table td input[type=button] {
+  padding: 4px;
+}
+#content table tr:nth-child(even) {
+  background: #ccc;
+}
+#content table tr:nth-child(odd) {
+  background: #eee;
+}
+#content table thead {
+  font-weight: bold;
+}
+#content table thead td {
+  background: #444444;
+  color: #fff;
+}
+#content footer {
+  text-align: center;
+  padding: 25px 0;
+}

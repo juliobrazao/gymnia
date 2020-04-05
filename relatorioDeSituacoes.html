@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gymnia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand:700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+  
+    <header>
+      <h1>Gymnia</h1>
+      <nav>
+        <ul>
+          <li><a href="novoAluno.html">Novo Aluno</a></li>
+          <li><a href="pesquisaDeAluno.html">Pesquisar</a></li>
+          <li><a href="controleDeAcesso.html">Controle de Acesso</a></li>
+          <li><a href="relatoriosDeEntradaSaida.html">Entradas e Saídas</a></li>
+          <li><a href="relatorioDeSituacoes.html">Situações</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Relatório de Situações</h2>
+      <div id="infoMessage">
+        (Mensagem de LOG)
+      </div>
+    </section>
+
+    <form>
+      <fieldset>
+        <legend>Parâmetros de Pesquisa</legend>
+
+        <label for="situacao">Situação Cadastral</label><br>
+        <select name="situacao" id="situacao">
+          <option value="ativo">Ativo</option>
+          <option value="inativo">Inativo</option>
+          <option value="pendencia">Com Pendencia</option>
+        </select>
+      </fieldset>
+
+      <input type="submit" value="Registrar Acesso">
+    </form>
+
+    <hr>
+
+    <h4>Relatório De Situações</h4>
+
+    <table>
+      <thead>
+        <td>ID</td>
+        <td>Nome</td>
+        <td>Situação</td>
+        <td>Celular</td>
+        <td>Fixo</td>
+        <td>Ações</td>
+      </thead>
+
+      <tr>
+        <td>1</td>
+        <td>Júlio</td>
+        <td>Ativo</td>
+        <td>92 98291-2020</td>
+        <td>92 3213-6116</td>
+        <td>
+          <input type="button" value="Editar">
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Júlia</td>
+        <td>Ativo</td>
+        <td>92 98291-2020</td>
+        <td>92 3213-6116</td>
+        <td>
+          <input type="button" value="Editar">
+        </td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Mariê</td>
+        <td>Ativo</td>
+        <td>92 98291-2020</td>
+        <td>92 3213-6116</td>
+        <td>
+          <input type="button" value="Editar">
+        </td>
+      </tr>
+    </table>
+
+    <footer>
+      2020 - Desenvolvido por Júlio Brazão
+    </footer>
+</div>
+</body>
+</html>

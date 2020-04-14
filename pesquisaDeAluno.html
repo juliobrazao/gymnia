@@ -10,24 +10,39 @@
   <div id="content">
   
     <header>
-      <h1>Gymnia</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Novo Aluno</a></li>
-          <li><a href="pesquisaDeAluno.html">Pesquisar</a></li>
-          <li><a href="controleDeAcesso.html">Controle de Acesso</a></li>
-          <li><a href="relatoriosDeEntradaSaida.html">Entradas e Saídas</a></li>
-          <li><a href="relatorioDeSituacoes.html">Situações</a></li>
-        </ul>
-      </nav>
+      <h1>
+        GymniApp
+        <span>
+          ≡
+        </span>
+      </h1>
     </header>
 
+    <nav>
+      <ul>
+        <li><a href="index.html">Novo Aluno</a></li>
+        <li><a href="pesquisaDeAluno.html">Pesquisar</a></li>
+        <li><a href="controleDeAcesso.html">Controle de Acesso</a></li>
+        <li><a href="relatoriosDeEntradaSaida.html">Entradas e Saídas</a></li>
+        <li><a href="relatorioDeSituacoes.html">Situações</a></li>
+      </ul>
+    </nav>
+
     <section>
-      <h2>Pesquisa de Aluno</h2>
-      <div id="infoMessage">
-        (Mensagem de LOG)
-      </div>
+      <h2>Pesquisar</h2>
     </section>
+
+    <div id="infoMessage">
+      INFO: Dados estão em arquivos temporários.
+    </div>
+
+    <div id="errorMessage">
+      ERROR: Dados não foram gravados.
+    </div>
+
+    <div id="successMessage">
+      DONE: Dados foram gravados!
+    </div>
 
     <form>
       <fieldset>
@@ -106,5 +121,6 @@
     </footer>
 </div>
 </body>
+<script src="logic.js"></script>
 </html>
  

@@ -1,146 +1,386 @@
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFkpl0k30e0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAnsSUYevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUYevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAksCUYevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v7/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jow.ttf) format('truetype');
+}
 * {
   padding: 0;
   margin: 0 auto;
 }
 body {
-  background: #495867;
+  font-size: 10px;
   font-family: sans-serif;
-  text-align: center;
 }
-section {
-  padding: 10px 0;
-  width: 100%;
-  text-align: center;
-  color: #BDD5EA;
-}
-#content {
-  width: 80%;
-  text-align: left;
-}
-#content header {
-  text-align: center;
-  padding: 10px 0;
-}
-#content header h1 {
-  font-family: "Quicksand";
-  font-size: 50px;
-  color: #BDD5EA;
-  padding-bottom: 20px;
-}
-@media only screen and (min-width: 661px) {
-  #content header nav {
-    border-bottom: 1px solid #BDD5EA;
-    padding: 10px 0;
-    font-size: 13px;
+@media only screen and (max-width: 1000px) {
+  div#content header {
+    text-align: center;
+    width: 100%;
+  }
+  div#content header h1 {
+    background: #181818;
+    color: white;
+    font-size: 5em;
+    font-family: "Nunito";
+    padding: 0.5em 0;
+  }
+  div#content header h1 a:link,
+  div#content header h1 a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  div#content nav {
+    background: #404040;
+    display: none;
+    font-size: 2em;
+    text-align: center;
+  }
+  div#content nav li:nth-child(1),
+  div#content nav :nth-child(3),
+  div#content nav :nth-child(5) {
+    border-top: 1px solid #256170;
+    border-bottom: 1px solid #256170;
+  }
+  div#content nav li {
+    background: linear-gradient(#63b6cb, #328296);
+    padding: 0.5em 0;
+  }
+  div#content nav li a {
+    font-family: "Nunito";
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+  div#content nav li a:link {
+    color: white;
+    text-decoration: none;
+  }
+  div#content nav li a:visited {
+    color: white;
+  }
+  div#content section {
+    padding: 2em 0;
+    background: radial-gradient(#fff, #eee);
+    text-align: center;
+  }
+  div#content #infoMessage {
+    background: linear-gradient(#d7c586, #cab360);
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #cab360;
+    border-radius: 4px;
+    color: #6d5d24;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: "Nunito";
+  }
+  div#content #errorMessage {
+    background: linear-gradient(#d78693, #ca6071);
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #ca6071;
+    border-radius: 4px;
+    color: #6d2430;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: "Nunito";
+  }
+  div#content #successMessage {
+    background: linear-gradient(#9bf3c7, #6deeae);
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #6deeae;
+    border-radius: 4px;
+    color: #14ae62;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: "Nunito";
+  }
+  div#content form {
+    margin: 1em 1em;
+    text-align: center;
+  }
+  div#content form fieldset {
+    text-align: left;
+    padding: 1em;
+  }
+  div#content form fieldset legend {
+    font-size: 2em;
+    padding: 0 0.5em;
+  }
+  div#content form fieldset label {
+    font-size: 1.8em;
+  }
+  div#content form fieldset input,
+  div#content form fieldset select {
+    padding: 0.2em;
+    font-size: 2.2em;
+  }
+  div#content form fieldset input[type=tel]:nth-child(odd) {
+    width: 2em;
+  }
+  div#content form fieldset input[type=tel]:nth-child(even) {
+    width: 8em;
+  }
+  div#content form input[type=button],
+  div#content form input[type=submit] {
+    background: linear-gradient(#63b6cb, #328296);
+    border: 1px solid #256170;
+    padding: 0.8em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: white;
+    margin: 0.5em;
+  }
+  div#content hr {
+    margin: 1em 0;
+    border: 1px solid #eee;
+  }
+  div#content h4 {
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 1.6em;
+  }
+  div#content table {
+    width: 100%;
+    padding: 2%;
+    font-size: 1.2em;
     font-family: "Muli";
   }
-  #content header nav li {
-    list-style: none;
+  div#content table thead td {
+    background: linear-gradient(#63b6cb, #328296);
+    color: #fff;
+  }
+  div#content table thead td {
+    padding: 0.5em;
+  }
+  div#content table input {
+    font-family: "Muli";
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    background: none;
+    color: #328296;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  div#content footer {
+    background: linear-gradient(#333, #111);
+    padding: 3em 0;
+    text-align: center;
+    font-family: "Nunito";
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  body {
+    font-size: 10px;
+  }
+  div#content {
+    width: 100%;
+  }
+  div#content header {
+    padding: 2em 0;
+    font-family: "Nunito";
+    color: white;
+    background: #181818;
+    width: 100%;
+    text-align: center;
+  }
+  div#content header h1 {
+    font-size: 5em;
+  }
+  div#content header span {
+    display: none;
+  }
+  div#content nav {
+    background: linear-gradient(#63b6cb, #328296);
+    padding: 1em 0;
+    font-family: "Nunito";
+    text-align: center;
+  }
+  div#content nav li {
     display: inline;
+    padding: 1em 2.5em;
   }
-  #content header nav a,
-  #content header nav a:visited {
-    padding: 10px 10px;
-    color: #BDD5EA;
+  div#content nav li a,
+  div#content nav li a:link {
+    color: white;
+    font-size: 1.6em;
+    font-weight: 600;
     text-decoration: none;
   }
-  #content header nav a:hover {
-    background: #88498F;
+  div#content nav li a:hover {
+    color: #eee;
   }
-}
-@media only screen and (max-width: 660px) {
-  #content header nav {
-    border-bottom: 1px solid #BDD5EA;
-    padding: 10px 0;
-    font-size: 13px;
-    font-family: "Muli";
+  div#content section {
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 2em;
   }
-  #content header nav li {
-    list-style: none;
-    padding: 5px 0;
+  div#content #infoMessage {
+    background: linear-gradient(#d7c586, #cab360);
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #cab360;
+    border-radius: 4px;
+    color: #6d5d24;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: "Nunito";
   }
-  #content header nav a,
-  #content header nav a:visited {
-    padding: 10px 10px;
-    color: #BDD5EA;
-    text-decoration: none;
+  div#content #errorMessage {
+    background: linear-gradient(#d78693, #ca6071);
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #ca6071;
+    border-radius: 4px;
+    color: #6d2430;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: "Nunito";
   }
-  #content header nav a:hover {
-    background: #88498F;
+  div#content #successMessage {
+    background: linear-gradient(#9bf3c7, #6deeae);
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #6deeae;
+    border-radius: 4px;
+    color: #14ae62;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: "Nunito";
   }
-}
-#content form {
-  font-family: "Muli";
-}
-#content form fieldset {
-  padding: 10px;
-  margin-top: 20px;
-  border: 1px solid #577399;
-}
-#content form fieldset legend {
-  margin-left: 3%;
-  padding: 0 10px;
-  font-weight: bold;
-  color: #BDD5EA;
-}
-#content form label {
-  color: #BDD5EA;
-}
-#content form input {
-  font-family: "Muli";
-}
-#content form input[type=text],
-#content form input[type=tel],
-#content form input[type=email],
-#content form input[type=date],
-#content form select {
-  padding: 4px;
-  background: #88498F;
-  border: 1px solid #37123C;
-  color: yellow;
-}
-#content form input[type=tel]:nth-child(odd) {
-  width: 30px;
-}
-#content form input[type=submit],
-#content form input[type=button] {
-  border: 1px solid #37123C;
-  background: linear-gradient(#88498F, #37123C);
-  color: #BDD5EA;
-  font-family: "Muli";
-  margin: 15px 0;
-  padding: 8px;
-}
-#content form input[type=submit]:hover,
-#content form input[type=button]:hover {
-  background: #88498F;
-}
-#content h4 {
-  padding: 20px 0;
-}
-#content table {
-  padding: 10px 0;
-}
-#content table td {
-  padding: 5px;
-}
-#content table td input[type=button] {
-  padding: 4px;
-}
-#content table tr:nth-child(even) {
-  background: #ccc;
-}
-#content table tr:nth-child(odd) {
-  background: #eee;
-}
-#content table thead {
-  font-weight: bold;
-}
-#content table thead td {
-  background: #444444;
-  color: #fff;
-}
-#content footer {
-  text-align: center;
-  padding: 25px 0;
+  div#content form {
+    padding: 2%;
+    text-align: center;
+  }
+  div#content form fieldset {
+    text-align: left;
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    padding: 1%;
+  }
+  div#content form fieldset legend {
+    font-size: 2em;
+    padding: 0 0.4em;
+  }
+  div#content form fieldset label {
+    font-size: 1.5em;
+  }
+  div#content form fieldset input[type=text],
+  div#content form fieldset select,
+  div#content form fieldset input[type=date],
+  div#content form fieldset input[type=email],
+  div#content form fieldset input[type=tel] {
+    font-size: 1.4em;
+    padding: 0.2em;
+  }
+  div#content form fieldset input[type=tel]:nth-child(odd) {
+    width: 40px;
+  }
+  div#content form input[type=submit],
+  div#content form input[type=button] {
+    font-family: "Nunito";
+    background: linear-gradient(#63b6cb, #328296);
+    border: 1px solid #256170;
+    padding: 0.8em;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: white;
+    margin: 0.5em;
+  }
+  div#content form input[type=submit]:hover,
+  div#content form input[type=button]:hover {
+    background: #328296;
+  }
+  div#content hr {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+  }
+  div#content h2,
+  div#content h4 {
+    font-family: "Nunito";
+    color: #181818;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  div#content table {
+    padding: 30px;
+  }
+  div#content table thead td {
+    background: linear-gradient(#63b6cb, #328296);
+    color: white;
+  }
+  div#content table td {
+    padding: 5px 10px;
+  }
+  div#content table td input[type=button],
+  div#content table td input[type=submit],
+  div#content table td button {
+    font-family: "Nunito";
+    color: #fff;
+    font-weight: 600;
+    padding: 0.4em 1em;
+    background: linear-gradient(#63b6cb, #328296);
+    border: 1px solid #256170;
+  }
+  div#content table td input[type=button]:hover,
+  div#content table td input[type=submit]:hover,
+  div#content table td button:hover {
+    background: #328296;
+  }
+  div#content table tr:nth-child(odd) {
+    background: #ddd;
+  }
+  div#content table tr:nth-child(even) {
+    background: #fff;
+  }
+  div#content footer {
+    background: linear-gradient(#333, #111);
+    padding: 3em 0;
+    text-align: center;
+    font-family: "Nunito";
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 }
